@@ -57,16 +57,7 @@ namespace customer.Controllers
         [HttpPost]
         public ActionResult Dashboard(custinfo cust)
         {
-            /*custinfo cs = new custinfo();
-            cs.logid = cust.logid;
-            cs.customer_email = cust.customer_email;
-            cs.customer_name = cust.customer_name;
-            cs.log_status = cust.log_status;
-            cs.descriptions = cust.descriptions;
-            db.custinfoes.Add(cs);
-            db.SaveChanges();
-            Response.Write("<script> alert('complaint registered successfully')</script>");
-            return View();*/
+           
 
             custinfo c = new custinfo();
 
