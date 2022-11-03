@@ -1,13 +1,13 @@
-﻿using NUnit.Framework;
+﻿using customer.Models;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Helpers;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace customer.Models
+namespace DalTest
 {
-    [TestFixture]
     public class customer_support_class
     {
         [TestCase(1)]
@@ -22,7 +22,7 @@ namespace customer.Models
 
         }
         [TestCase("abcd123")]
-       // [TestCase("suki123")]
+        [TestCase("suki123")]
         public void Userinfo_test1(string p)
         {
             customerEntities db = new customerEntities();
@@ -39,8 +39,5 @@ namespace customer.Models
 
             v.check(uid, s);
         }
-
-
-
     }
-}
+    }
